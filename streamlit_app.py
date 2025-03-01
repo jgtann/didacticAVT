@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the dataset for Page 2
-file_path = "/mnt/data/tab3_importance.csv"
+file_path = "tab3_importance.csv"
 df = pd.read_csv(file_path)
 
 # Sidebar navigation for multi-page functionality
