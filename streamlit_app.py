@@ -27,22 +27,24 @@ if page == "Questionnaire":
     experience = st.radio("Select your teaching experience:", 
                           ["Less than 1 year", "1 to 4 years", "5 to 9 years", "More than 10 years"])
 
+    st.markdown("<hr>", unsafe_allow_html=True)
+
     # Rating Instructions
     st.subheader("Please rate each strategy on a 7-point scale:")
     st.markdown(
-        """
-        <p style='font-size:32px;'>
-        <b>1</b> = Not Important at All<br>
-        <b>2</b> = Slightly Important<br>
-        <b>3</b> = Somewhat Important<br>
-        <b>4</b> = Moderately Important<br>
-        <b>5</b> = Important<br>
-        <b>6</b> = Very Important<br>
-        <b>7</b> = Extremely Important
-        </p>
-        """,
-        unsafe_allow_html=True
-    )
+    """
+    <p style='font-size:32px; background-color: yellow; padding: 10px; border-radius: 5px;'>
+    <b>1</b> = not important<br>
+    <b>2</b> = slightly important<br>
+    <b>3</b> = somewhat important<br>
+    <b>4</b> = moderately important<br>
+    <b>5</b> = important<br>
+    <b>6</b> = quite important<br>
+    <b>7</b> = very important
+    </p>
+    """,
+    unsafe_allow_html=True
+)
 
     # Rating Table
     strategies = [
