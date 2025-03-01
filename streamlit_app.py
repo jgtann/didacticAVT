@@ -19,7 +19,7 @@ if page == "Questionnaire":
 
     # Teaching Context
     st.header("Teaching Context")
-    teaching_levels = ["Elementary School", "Secondary School", "University", "Private School"]
+    teaching_levels = ["University", "Secondary school","Elementary school", "Language school", "Private practice"]
     selected_levels = [level for level in teaching_levels if st.checkbox(level)]
 
     # Teaching Experience
